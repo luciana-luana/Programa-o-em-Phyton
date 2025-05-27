@@ -22,8 +22,8 @@ for h in range (10,56,3):
     print(h)
     
 import math #ver isso 
-for h in range (10,56,3):
-    if h % 7 ==0:
-        break
-        print(h)
+for h in range(10, 56, 3):
+    if h % 7 == 0:
+        break  
+    print(h)
 print("fim")
