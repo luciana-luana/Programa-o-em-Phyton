@@ -21,7 +21,7 @@ import math
 for h in range (10,56,3):
     print(h)
     
-import math #ver isso 
+import math 
 for h in range(10, 56, 3):
     if h % 7 == 0:
         break  
