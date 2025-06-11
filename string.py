@@ -58,6 +58,3 @@ def elimrep2(xs):
 
 
 
-
-xs = ys = -1;
-xs diferente ys - retona o menor indíce
