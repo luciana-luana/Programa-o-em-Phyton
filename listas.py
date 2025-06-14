@@ -24,3 +24,39 @@ def soma_parcial(lista:list,n:int)-> int:
     for i in range(0, n+1):
         soma += lista[i]
     return soma
+
+#exercicio 5.4
+
+def intervalo (xs,a,b):
+    contagem=0
+    for x in xs:
+        if a<=x <=b:
+            contagem=contagem + 1
+    return contagem
+
+#exercício 5.5
+def segundoMaior(l) -> int:
+    ordem = list(set(l))         
+    ordem.sort(reverse=True)      
+    if len(ordem) < 2:
+        return None               
+    return ordem[1]
+
+#exercicio 5.6
+def ocorrencias (txt,c):
+    ys=[]
+    for i in range(len(txt)):
+        if txt[i] ==c:
+            ys.append(i)
+    return ys
+
+#exercicio 5.8
+def repetidos (lista):
+    ys=[]
+    for i in lista:
+        if i in ys:
+            return True
+        ys.append(i)
+    return False
+
+
