@@ -59,4 +59,17 @@ def repetidos (lista):
         ys.append(i)
     return False
 
-
+#exercicio 5.9
+def palavras(txt):
+    ys=[]
+    lista = ''
+    for i in txt:
+        if i.isalpha():
+            lista += i
+        else:
+            if lista != '':
+                ys.append(lista)
+                lista=''
+    if lista != '':
+        ys.append(lista)
+    return ys
