@@ -64,7 +64,7 @@ def palavras(txt):
     ys=[]
     lista = ''
     for i in txt:
-        if i.isalpha():
+        if i.isalpha(): 
             lista += i
         else:
             if lista != '':
@@ -73,3 +73,15 @@ def palavras(txt):
     if lista != '':
         ys.append(lista)
     return ys
+    
+#exercicio 5.10
+def pascal(n):
+    linha = [1] #começa a lista contendo apenas um número 
+    for k in range(1, n + 1):
+        coef = linha[-1] * (n + 1-k) // k
+        linha.append(coef)#adiciona o coeficiente recém-calculado à lista
+    return linha
+
+
+
+
