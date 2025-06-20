@@ -5,3 +5,4 @@ def media_art(xs):
     n = len(xs)
     return soma / n
     
+    

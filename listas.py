@@ -82,6 +82,20 @@ def pascal(n):
         linha.append(coef)#adiciona o coeficiente recém-calculado à lista
     return linha
 
+#exercicio 5.11
+def anagramas (txt1,tx2):
+        if st(txt1) == len(tx2):
+            return True
+        else:
+            return False
 
+def anagramas(txt1, txt2):
+    # Remove espaços, sinais e torna tudo minúsculo
+    txt1 = ''.join(c.lower() for c in txt1 if c.isalpha())
+    txt2 = ''.join(c.lower() for c in txt2 if c.isalpha())
 
-
+    # Compara se as letras e suas quantidades são iguais
+    if sorted(txt1) == sorted(txt2):
+        return True
+    else:
+        return False

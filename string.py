@@ -1,4 +1,5 @@
 
+#exercicio 4.1.
 def conta_letras (txt):
     
     contador = 0
@@ -7,17 +8,49 @@ def conta_letras (txt):
              #txt='Olá Mundo'
     return contador
     
-
+#exercicio 4.2.
 def apenas_letras(txt): #true ou false
     return txt.isalpha()
 
-    
+#exercicio 4.3.
+def filtra_letras(txt):
+    letras=''
+    for i in txt:
+        if i.isalpha(): #verifica se o caracter é uma letra
+            letras+=i
+    return letras
+
+
+#exercicio 4.4.  
 def inversa(txt):
     return txt[::-1]
     
-
+#exercicio 4.5.
 def palindromo (txt):
-    return inversa(txt).upper()==txt.upper()
+    return inversa(txt).upper()==txt.upper() #retorna a função inversa
+
+#exercicio 4.6.
+def filtra_letras(txt):
+    letras=''
+    for i in txt:
+        if i.isalpha(): #verifica se o caracter é uma letra
+            letras+=i
+    return letras
+
+def palindromo_geral(txt):
+    txt_filtrado=filtra_letras(txt).lower()
+    return txt_filtrado == txt_filtrado[::-1]
+
+#exercicio 4.7.
+def rem_espacos(txt):
+        txt = txt.replace('  ', ' ')  # substitui dois por um
+    return txt
+
+#exercicio 4.8.
+
+#exercicio 4.9.
+
+#exercicio 4.10.
 
 def media (xs):
     return soma (xs)/len(xs)
